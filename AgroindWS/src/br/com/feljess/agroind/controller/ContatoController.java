@@ -16,7 +16,7 @@ import br.com.feljess.agroind.model.Contato;
 public class ContatoController {
 	/**
 	 * 
-	 * Método responsável por
+	 * Método responsável por controlar
 	 * @autor Felipe Oliveira
 	 * @email flpdias14@gmail.com
 	 * @sice 15 de nov de 2016 15:03:54
