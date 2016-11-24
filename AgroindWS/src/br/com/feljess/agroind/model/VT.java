@@ -28,6 +28,15 @@ public class VT {
 	private ArrayList<Unidades> unidades;
 	private ArrayList<Vacinas> vacinas;
 	private ArrayList<Pessoa> pessoas;
+	private ArrayList<Integrado> integrados;
+	
+	public void setIntegrados(ArrayList<Integrado> integrados){
+		this.integrados = integrados;
+	}
+	
+	public ArrayList<Integrado> getIntegrados(){
+		return integrados;
+	}
 	
 	public ArrayList<Pessoa> getPessoas(){
 		return pessoas;
