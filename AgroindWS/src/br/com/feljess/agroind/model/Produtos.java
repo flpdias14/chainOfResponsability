@@ -671,107 +671,11 @@ public class Produtos {
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if ((obj instanceof Produtos) && ((Produtos)obj).getId() == this.getId()) {
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Produtos other = (Produtos) obj;
-		if (andar == null) {
-			if (other.andar != null)
-				return false;
-		} else if (!andar.equals(other.andar))
-			return false;
-		if (bloqueado != other.bloqueado)
-			return false;
-		if (codEan == null) {
-			if (other.codEan != null)
-				return false;
-		} else if (!codEan.equals(other.codEan))
-			return false;
-		if (codNcm == null) {
-			if (other.codNcm != null)
-				return false;
-		} else if (!codNcm.equals(other.codNcm))
-			return false;
-		if (conferenciaAntesDeConfirmarEntradaDoItem != other.conferenciaAntesDeConfirmarEntradaDoItem)
-			return false;
-		if (descricao == null) {
-			if (other.descricao != null)
-				return false;
-		} else if (!descricao.equals(other.descricao))
-			return false;
-		if (emitirOrdemCarregoNaVenda != other.emitirOrdemCarregoNaVenda)
-			return false;
-		if (epi != other.epi)
-			return false;
-		if (exigirIntegradoDuranteProgramacaoVenda != other.exigirIntegradoDuranteProgramacaoVenda)
-			return false;
-		if (id != other.id)
-			return false;
-		if (idFabricante != other.idFabricante)
-			return false;
-		if (idGrupoProduto != other.idGrupoProduto)
-			return false;
-		if (idTipoRacao != other.idTipoRacao)
-			return false;
-		if (nome == null) {
-			if (other.nome != null)
-				return false;
-		} else if (!nome.equals(other.nome))
-			return false;
-		if (pratileira == null) {
-			if (other.pratileira != null)
-				return false;
-		} else if (!pratileira.equals(other.pratileira))
-			return false;
-		if (prazoMaxUsoEPI != other.prazoMaxUsoEPI)
-			return false;
-		if (prazoMinUsoEPI != other.prazoMinUsoEPI)
-			return false;
-		if (Double.doubleToLongBits(precoCompra) != Double.doubleToLongBits(other.precoCompra))
-			return false;
-		if (Double.doubleToLongBits(precoVenda) != Double.doubleToLongBits(other.precoVenda))
-			return false;
-		if (principioAtivo != other.principioAtivo)
-			return false;
-		if (produtoInsideQuebraNaVenda != other.produtoInsideQuebraNaVenda)
-			return false;
-		if (protecaoAuditiva != other.protecaoAuditiva)
-			return false;
-		if (protecaoCabeca != other.protecaoCabeca)
-			return false;
-		if (protecaoContraQuedas != other.protecaoContraQuedas)
-			return false;
-		if (protecaoDorsal != other.protecaoDorsal)
-			return false;
-		if (protecaoMaosBracos != other.protecaoMaosBracos)
-			return false;
-		if (protecaoPernasPes != other.protecaoPernasPes)
-			return false;
-		if (protecaoVisualFacial != other.protecaoVisualFacial)
-			return false;
-		if (Double.doubleToLongBits(qtdEstoque) != Double.doubleToLongBits(other.qtdEstoque))
-			return false;
-		if (Double.doubleToLongBits(qtdVenda) != Double.doubleToLongBits(other.qtdVenda))
-			return false;
-		if (rua == null) {
-			if (other.rua != null)
-				return false;
-		} else if (!rua.equals(other.rua))
-			return false;
-		if (undEstoque == null) {
-			if (other.undEstoque != null)
-				return false;
-		} else if (!undEstoque.equals(other.undEstoque))
-			return false;
-		if (undVenda == null) {
-			if (other.undVenda != null)
-				return false;
-		} else if (!undVenda.equals(other.undVenda))
-			return false;
-		return true;
+		}
+
+		return false;
 	}
 	
 	

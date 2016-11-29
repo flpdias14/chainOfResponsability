@@ -17,7 +17,7 @@ import br.com.feljess.agroind.model.DadosPreAlojamentoPorGalpao;
  * @sice 14:53:27 15 de nov de 2016
  * @version 1.0
  */
-@Path("/preAlojamento")
+@Path("/dadosPreAlojamento")
 public class DadosPreAlojamentoPorGalpaoResource {
 	
 	/**

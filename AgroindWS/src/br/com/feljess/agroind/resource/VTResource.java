@@ -15,6 +15,7 @@ import br.com.feljess.agroind.controller.EstruturaIntegradoController;
 import br.com.feljess.agroind.controller.GrupoProdutosController;
 import br.com.feljess.agroind.controller.IntegradoController;
 import br.com.feljess.agroind.controller.PessoaController;
+import br.com.feljess.agroind.controller.PreAlojamentoController;
 import br.com.feljess.agroind.controller.ProdutosController;
 import br.com.feljess.agroind.controller.TecnicoController;
 import br.com.feljess.agroind.controller.UnidadesController;
@@ -59,6 +60,8 @@ public class VTResource {
 		vt.setVacinas(VacinasController.listarTodos());
 		vt.setPessoas(PessoaController.listarTodos());
 		vt.setIntegrados(IntegradoController.listarTodos());
+		vt.setPreAlojamentos(PreAlojamentoController.listarTodos());
+		
 			
 		return vt;
 	}

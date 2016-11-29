@@ -29,7 +29,24 @@ public class VT {
 	private ArrayList<Vacinas> vacinas;
 	private ArrayList<Pessoa> pessoas;
 	private ArrayList<Integrado> integrados;
+	private ArrayList<PreAlojamento> preAlojamentos;
 	
+	
+	
+	/**
+	 * @return the preAlojamentos
+	 */
+	public ArrayList<PreAlojamento> getPreAlojamentos() {
+		return preAlojamentos;
+	}
+
+	/**
+	 * @param preAlojamentos the preAlojamentos to set
+	 */
+	public void setPreAlojamentos(ArrayList<PreAlojamento> preAlojamentos) {
+		this.preAlojamentos = preAlojamentos;
+	}
+
 	public void setIntegrados(ArrayList<Integrado> integrados){
 		this.integrados = integrados;
 	}
