@@ -7,12 +7,18 @@ package chainofresponsability;
 
 /**
  *
- * @author usuario
+ * @author Felipe Oliveira <flpdias14@gmail.com>
  */
 public class Bitcoin extends Account{
-	protected int balance;
+	private int balance;
 
     public Bitcoin(int balance) {
         this.balance = balance;
     }
+    
+    @Override
+    public int getBalance() {
+    	return this.balance;
+    }
+    
 }

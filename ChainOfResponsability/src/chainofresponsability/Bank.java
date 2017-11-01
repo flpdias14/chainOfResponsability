@@ -7,13 +7,17 @@ package chainofresponsability;
 
 /**
  *
- * @author usuario
+ * @author Felipe Oliveira <flpdias14@gmail.com>
  */
 public class Bank extends Account{
-    protected int balance;
+    private int balance;
 
     public Bank(int balance) {
         this.balance = balance;
     }
-
+    
+    @Override
+    public int getBalance() {
+    	return this.balance;
+    }
 }

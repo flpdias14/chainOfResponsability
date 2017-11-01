@@ -11,7 +11,7 @@ import chainofresponsability.PayPal;
 
 /**
  *
- * @author usuario
+ * @author Felipe Oliveira <flpdias14@gmail.com>
  */
 public class Main {
     
@@ -22,8 +22,8 @@ public class Main {
         
         bank.setNext(payPal);
         payPal.setNext(bitcoin);
-//        bitcoin.setNext(bank);
+
         
-        bank.pay(100);
+        bank.pay(390);
     }
 }

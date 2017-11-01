@@ -7,12 +7,19 @@ package chainofresponsability;
 
 /**
  *
- * @author usuario
+ * @author Felipe Oliveira <flpdias14@gmail.com>
  */
 public class PayPal extends Account{
-	protected int balance;
+	private int balance;
 
     public PayPal(int balance) {
         this.balance = balance;
     }
+    
+    @Override
+    public int getBalance() {
+    	return this.balance;
+    }
+    
+    
 }

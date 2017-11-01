@@ -7,38 +7,40 @@ package chainofresponsability;
 
 /**
  *
- * @author usuario
+ * @author Felipe Oliveira <flpdias14@gmail.com>
  */
 public abstract class Account {
 
-	protected Account successor;
-	protected int balance;
+	private Account successor;
+	private int balance;
 
     public void setNext(Account a) {
         this.successor = a;
     }
 
     public boolean canPay(int amount) {
-        if (this.balance >= amount) {
+        if (getBalance() >= amount) {
             return true;
         }
         return false;
     }
 
-    public boolean existSucessor() {
-        return this.successor != null;
-    }
-
     public void pay(int amountToPay) {
-        if (this.balance >= amountToPay) {
-            System.out.println("Paid $" + amountToPay + " using " + this.getClass().getName());
-            this.pay(amountToPay);
-        } else if (this.successor != null) {
-            //System.out.println(this.successor.getClass().getCanonicalName());
-            System.out.println("Cannot pay using " + this.getClass().getName());
-            this.successor.pay(amountToPay);
+        if (canPay(amountToPay)) {
+            System.out.println("Paid $" + amountToPay + " using " + this.getClass().getSimpleName());
+        } else if (getSucessor() != null) {
+            System.out.println("Cannot pay using " + this.getClass().getSimpleName());
+            getSucessor().pay(amountToPay);
         } else {
             System.out.println("None of the accounts have enough balance");
         }
+    }
+    
+    public int getBalance() {
+    	return this.balance;
+    }
+    
+    public Account getSucessor() {
+    	return this.successor;
     }
 }
