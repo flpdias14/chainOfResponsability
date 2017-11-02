@@ -1,1 +1,1 @@
-# Implementation of Chain of Responsability Design Pattern
+## Example of Chain of Responsability Design Pattern
